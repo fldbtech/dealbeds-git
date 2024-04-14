@@ -1,0 +1,297 @@
+{{#if theme_settings.homepage_category_show}}
+{{#if theme_settings.theme_multistore}}
+<div class="section-spacing">
+    <div class="cate-bg container">
+        <div class="category-head myheadeing">
+            <h2 class="page-heading">
+            {{lang 'common.cate' }}
+            <p>{{theme_settings.subheading-category}}</p>
+            <span class="head-line"></span>
+            </h2>
+        </div>
+        <div class="homecategory row cate-row pre-row">
+            <div class="all-cate caro-btn topsp col-12 pre-col all-head-contant">
+                    <div class="homecate">
+                        <section class="productCarousel"
+                            data-list-name="{{list}}"
+                            data-slick='{
+                            "infinite": false,
+                            "mobileFirst": true,
+                            "dots": false,
+                            "slidesToShow": 2,
+                            "slidesToScroll": 2,
+                            "rows": 2,
+                            "prevArrow": "{{#if customArrowClass}}.{{customArrowClass}}{{/if}}.js-product-prev-arrow-cate",
+                            "nextArrow": "{{#if customArrowClass}}.{{customArrowClass}}{{/if}}.js-product-next-arrow-cate",
+                            "responsive": [
+                                {
+                                    "breakpoint": 1409,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 1200,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 991,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 767,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 1
+                                    }
+                                },
+                                {
+                                    "breakpoint": 601,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 1
+                                    }
+                                },
+                                {
+                                    "breakpoint": 0,
+                                    "settings": {
+                                        "slidesToShow": 1,
+                                        "slidesToScroll": 1
+                                    }
+                                }
+                            ]
+                            }'
+                            >
+                            {{#each categories }}
+                            <div class="row">
+                                <div class="home-cate-item col-6 pre-col">
+                                    <div class="catebg">
+                                        <div class="cate-img">
+                                            <a class="" href="{{url}}"><img src="{{getImage image}}" alt="Category-image"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center cpton-p col-6 pre-col">
+                                    <div class="cate-ti">
+                                        <div>
+                                            <a class="catename" href="{{url}}">{{name}}</a>
+                                                <p>{{count}}<span>{{lang 'items'}}</span></p>
+                                            <a href="{{url}}" class="cate-shop">{{lang 'view detail'}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </section>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{else}}
+ {{#if theme_settings.theme_fashion}}
+ <div class="section-spacing">
+    <div class="cate-bg container">
+        <div class="category-head myheadeing">
+            <h2 class="page-heading">
+            {{lang 'common.cate' }}
+            <p>{{theme_settings.subheading-category}}</p>
+            <span class="head-line"></span>
+            </h2>
+
+        </div>
+        <div class="homecategory row cate-row pre-row">
+            <div class="all-cate caro-btn topsp col-12 pre-col all-head-contant">
+                    <div class="homecate">
+                        <section class="productCarousel"
+                            data-list-name="{{list}}"
+                            data-slick='{
+                            "infinite": false,
+                            "mobileFirst": true,
+                            "dots": false,
+                            "slidesToShow": 2,
+                            "slidesToScroll": 2,
+                            "rows": 2,
+                            "prevArrow": "{{#if customArrowClass}}.{{customArrowClass}}{{/if}}.js-product-prev-arrow-cate",
+                            "nextArrow": "{{#if customArrowClass}}.{{customArrowClass}}{{/if}}.js-product-next-arrow-cate",
+                            "responsive": [
+                                {
+                                    "breakpoint": 1409,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 1200,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 991,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 767,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 1
+                                    }
+                                },
+                                {
+                                    "breakpoint": 601,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 1
+                                    }
+                                },
+                                {
+                                    "breakpoint": 0,
+                                    "settings": {
+                                        "slidesToShow": 1,
+                                        "slidesToScroll": 1
+                                    }
+                                }
+                            ]
+                            }'
+                            >
+                            {{#each categories }}
+                            <div class="row">
+                                <div class="home-cate-item col-6 pre-col">
+                                    <div class="catebg">
+                                        <div class="cate-img">
+                                            <a class="" href="{{url}}"><img src="{{getImage image}}" alt="Category-image"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center cpton-p col-6 pre-col">
+                                    <div class="cate-ti">
+                                        <div>
+                                            <a class="catename" href="{{url}}">{{name}}</a>
+                                                <p>{{count}}<span>{{lang 'items'}}</span></p>
+                                            <a href="{{url}}" class="cate-shop">{{lang 'view detail'}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </section>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{else}}
+ {{#if theme_settings.theme_kids}}
+ <div class="section-spacing">
+    <div class="cate-bg container">
+        <div class="category-head myheadeing">
+            <h2 class="page-heading">
+            {{lang 'common.cate' }}
+            <p>{{theme_settings.subheading-category}}</p>
+            <span class="head-line"></span>
+            </h2>
+
+        </div>
+        <div class="homecategory row cate-row pre-row">
+            <div class="all-cate caro-btn topsp col-12 pre-col all-head-contant">
+                    <div class="homecate">
+                        <section class="productCarousel"
+                            data-list-name="{{list}}"
+                            data-slick='{
+                            "infinite": false,
+                            "mobileFirst": true,
+                            "dots": false,
+                            "slidesToShow": 2,
+                            "slidesToScroll": 2,
+                            "rows": 2,
+                            "prevArrow": "{{#if customArrowClass}}.{{customArrowClass}}{{/if}}.js-product-prev-arrow-cate",
+                            "nextArrow": "{{#if customArrowClass}}.{{customArrowClass}}{{/if}}.js-product-next-arrow-cate",
+                            "responsive": [
+                                {
+                                    "breakpoint": 1409,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 1200,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 991,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 2
+                                    }
+                                },
+                                {
+                                    "breakpoint": 767,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 1
+                                    }
+                                },
+                                {
+                                    "breakpoint": 601,
+                                    "settings": {
+                                        "slidesToShow": 2,
+                                        "slidesToScroll": 1
+                                    }
+                                },
+                                {
+                                    "breakpoint": 0,
+                                    "settings": {
+                                        "slidesToShow": 1,
+                                        "slidesToScroll": 1
+                                    }
+                                }
+                            ]
+                            }'
+                            >
+                            {{#each categories }}
+                            <div class="row">
+                                <div class="home-cate-item col-6 pre-col">
+                                    <div class="catebg">
+                                        <div class="cate-img">
+                                            <a class="" href="{{url}}"><img src="{{getImage image}}" alt="Category-image"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center cpton-p col-6 pre-col">
+                                    <div class="cate-ti">
+                                        <div>
+                                            <a class="catename" href="{{url}}">{{name}}</a>
+                                                <p>{{count}}<span>{{lang 'items'}}</span></p>
+                                            <a href="{{url}}" class="cate-shop">{{lang 'view detail'}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </section>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+ {{/if}}
+{{/if}}
+ {{/if}}
+ {{/if}}

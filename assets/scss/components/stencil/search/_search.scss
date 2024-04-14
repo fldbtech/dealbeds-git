@@ -1,0 +1,295 @@
+// =============================================================================
+// SEARCH
+// =============================================================================
+.head-search .form{
+    margin: 0;
+}
+.head-search .form-field{
+    margin: 0;
+}
+.search-suggestion {
+    margin-bottom: spacing("single") + spacing("third");
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+.suggestion-title {
+    margin-top: 0;
+    text-transform: inherit;
+}
+.wbSearch .form{
+    margin: 0;
+}
+.advancedSearch-form {
+    margin-bottom: spacing("double");
+
+    .form-row {
+        margin-bottom: -(spacing("single"));
+    }
+}
+.quickSearchResults {
+    position: absolute;
+    background: stencilColor("dropdown--quickSearch-backgroundColor");
+    left: 15px;
+    right: 15px;
+    margin-top: 10px!important;
+    border-radius: 0px;
+    padding: 0 15px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.18);
+    z-index: 2;
+    max-height: 405px;
+    overflow-y: scroll;
+
+    @include breakpoint("medium") {
+        margin-top: 0;
+    }
+
+    .modal-close {
+
+        @include breakpoint("medium") {
+            display: block;
+        }
+    }
+}
+
+.quickSearchResults .product {
+    list-style: none;
+    margin: 10px 0 10px 0;
+}
+
+.advancedSearch-separator {
+    display: none;
+}
+
+.advancedSearch-title {
+    margin: 0 0 spacing("single");
+    text-transform: inherit;
+}
+.search #colm-left .page-sidebar{
+    padding: 15px;
+}
+.quickSearchResults {
+    .modal-close{
+        top: 0px;
+        right: 0px;
+    }
+    .productGrid{
+        .product{
+            .card{
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                box-shadow: 0 0 5px 0 rgba(0, 0, 0, .18%);
+                .row{
+                    margin-right: -5px;
+                    margin-left: -5px;
+                }
+                .card-figure{
+                    padding-right: 5px;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+.search-price-range {
+    label {
+        display: inline;
+
+        input {
+            display: block;
+            padding-left: spacing("single");
+
+            @include breakpoint("small") {
+                display: inline;
+                width: 6rem;
+            }
+        }
+
+        span {
+            @include breakpoint("small") {
+                display: inline;
+                padding-left: spacing("single");
+                padding-right: spacing("single");
+            }
+        }
+    }
+}
+
+.category-suggestion-list {
+    @include grid-row($behavior: "nest");
+    list-style-type: none;
+}
+.mysearch .panel-body{
+    border-radius: 0px;
+}
+.category-suggestion {
+    @include grid-column(4);
+    font-size: fontSize("smaller");
+}
+
+.search-refine {
+    margin-left: spacing("single");
+}
+
+.quickSearchMessage {
+    font-size: fontSize("largest");
+    margin: 0 0;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.search-nav {
+    position: relative;
+}
+
+.quickSearchResults .listItem-figure .second-img{
+    display: none;
+}
+#search-results-heading{
+    margin-top: 20px;
+}
+.quickSearchResults .listItem-body .card-figcaption-body{
+    display: none;
+}
+.quickSearchResults .product{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.quickSearchResults .category-list-desc p{
+    display: none;
+}
+.quickSearchResults .listItem-title{
+    font-size: 16px;
+    font-weight: 400;
+}
+.quickSearchResults .product-thumb-top .sale-flag-sash{
+    display: none;
+}
+.quickSearchResults .product .listItem-body{
+    padding-left: 10px;
+}
+#search .wb-search-btn {
+    height: 42px;
+    padding: 10px 15px;
+    left: auto;
+    right: 0;
+    background: stencilColor("button--primary-backgroundColor");
+}
+#search .wb-search-btn:hover{
+    background: stencilColor("button--primary-backgroundColorHover");
+}
+.wb-search .input-group-btn{
+    position: absolute;
+    left: auto;
+    right: 10px;
+    top: 7px;
+}
+.wbSearch .form-input:focus{
+    border: none!important;
+}
+.wbSearch .form-input{
+    border: none!important;
+    padding: 28px;
+}
+#search .wb-search-btn svg{
+    fill: stencilColor("color-white");
+}
+@media (min-width: 1200px){
+    .quickSearchResults .listItem-figure {
+        width: 33%!important;
+    }
+    .quickSearchResults .listItem-body {
+        width: 67%!important;
+    }
+}
+@media(min-width: 1440px){
+    .quickSearchResults .listItem-figure {
+        width: 22%!important;
+    }
+    .quickSearchResults .listItem-body {
+        width: 78%!important;
+    }
+}
+@media(max-width: 800px){
+    .quickSearchResults .listItem-figure {
+        width: 33%!important;
+    }
+    .quickSearchResults .listItem-body {
+        width: 67%!important;
+    }
+    .quickSearchResults .sale-flag-sash, .sold-out-flag-sash{
+        display: none;
+    }
+    .wb-search .input-group-btn{
+        right: 4px;
+        top: 4px;
+    }
+    #search .wb-search-btn{
+        height: 35px;
+        padding: 6px 10px;
+    }
+    .wbSearch .form-input{
+        padding: 20px;
+    }
+}
+@media(max-width: 600px){
+    .quickSearchResults .category-list-desc {
+        display: none;
+    }
+    .quickSearchResults .product{
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .quickSearchResults .listItem-figure {
+        width: 22%!important;
+    }
+    .quickSearchResults .listItem-body {
+        width: 78%!important;
+    }
+    .quickSearchResults .modal-close{
+        font-size: 18px;
+        top: 0.05rem;
+        right: 0;
+    }   
+}
+
+@media(max-width: 550px){
+    .quickSearchResults .listItem-figure {
+        display: inline-block;
+        float: none;
+    }
+    .quickSearchResults .listItem-body {
+        float: right;
+        padding: 0 10px;
+    }
+    #search .wb-search-btn{
+        padding: 0px 10px;
+    }
+}
+
+@media(max-width: 425px){
+    .quickSearchResults .listItem-brand {
+        font-size: 14px;
+    }
+    .quickSearchResults .listItem-title{
+        font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .price {
+        font-size: 14px;
+    }
+    .price--discounted, .price--non-sale, .price--rrp {
+        font-size: 12px !important;
+    }
+}
+
+@media(max-width: 320px){
+    .quickSearchResults .listItem-brand{
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+<div class="brandbg topsp">
+	<div class="container">
+		<div id="brand" class="owl-carousel">
+			{{#if (lang 'webibrand.logo1.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo1.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo1.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+			{{#if (lang 'webibrand.logo2.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo2.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo2.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+			{{#if (lang 'webibrand.logo3.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo3.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo3.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+			{{#if (lang 'webibrand.logo4.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo4.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo4.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+			{{#if (lang 'webibrand.logo5.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo5.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo5.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+			{{#if (lang 'webibrand.logo6.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo6.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo6.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+			{{#if (lang 'webibrand.logo7.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo7.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo7.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+			{{#if (lang 'webibrand.logo8.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo8.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo8.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+			{{#if (lang 'webibrand.logo9.image') '!=' ' '}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo9.image')}}"  alt="{{title}}"  /></a>
+			{{else}}
+			<a href="{{url}}"><img class="img-fluid lazyload" data-sizes="auto" src="{{cdn '/assets/img/loading.svg'}}" data-src="{{cdn (lang 'webibrand.logo9.placeholderImage')}}" alt="{{title}}"  /></a>
+			{{/if}}
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    $("#brand").owlCarousel({
+    itemsCustom : [
+    [0, 2],
+    [600, 4],
+    [768, 5],
+    [1200, 7],
+    [1589, 8]
+    ],
+      autoPlay: 2500,
+      loop: true,
+      navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      navigation : false,
+      pagination:false
+    });
+    });
+</script>

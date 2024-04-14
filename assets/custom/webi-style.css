@@ -1,0 +1,127 @@
+body{
+
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    padding-top: 0;
+ }
+ h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.3px;
+}
+a {
+    text-decoration: none !important;
+}
+.owl-wrapper-outer{
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+.owl-carousel{
+    margin-bottom: 0;
+}
+ button:focus{
+    outline: none !important;
+ }
+ /* :focus {
+    outline: none;
+} */
+.hideme{
+    display: none;
+}
+svg{
+    vertical-align: middle;
+}
+dl, ol, ul{
+    margin: 0;
+}
+.fixed {
+    position: fixed;
+    z-index: 99999999;
+    background: #fff;
+    animation: goDown 0.5s ease-in-out forwards;
+    transition: .3s ease-in-out;
+    top: -60px;
+}
+
+@keyframes goDown {
+  0%{
+    top:-60px;
+  }
+  100% {
+    transform: translateY(60px);
+  }
+}
+@media (min-width: 1410px){
+    .container{
+        max-width: 1400px !important;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1409px){
+    /*.container {
+        max-width: 1170px !important;
+    }*/
+}
+@media (min-width: 320px) and (max-width: 991px){
+    .container {
+        max-width: 100% !important;
+    }
+}
+.container{
+    padding: 0 15px;
+}
+a:hover{
+    text-decoration: none;
+}
+@media(min-width: 801px){
+    .wb-desktop-hide,.manun .view_more{
+        display: none;
+    }
+}
+
+@media(max-width: 800px){
+    footer h5 .toggle.collapsed::after, footer h5 .toggle::after {
+        font-family: FontAwesome;
+        font-size: 14px;
+        font-weight: 400;
+        float: right;
+        cursor: pointer;
+    }
+    footer h5 .toggle::after {
+        content: '\f068';
+    }
+    footer h5 .toggle.collapsed::after {
+        content: '\f067';
+    }
+    footer button {
+        text-shadow: none;
+        background: 0 0;
+        border: none !important;
+        box-shadow: none;
+        font-size: 12px;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+@media(max-width: 360px){
+    .cate-top div {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+    .cate-top .actionBar-section {
+        float: left;
+        margin-top: 10px;
+    }
+    .toggleLink-text {
+        letter-spacing: 0;
+    }
+}
+.cate-mar{
+    margin: 0 -0.75rem;
+}
+

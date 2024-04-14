@@ -1,0 +1,30 @@
+// =============================================================================
+// ALERTS
+// =============================================================================
+
+.alertBox {
+    border-radius: 0;
+    color: stencilColor("alert-color");
+    margin-bottom: 0rem;
+    margin-top: 1.5rem;
+}
+
+.alertBox-icon {
+    .icon {
+        @include square(25px);
+    }
+}
+
+.alertBox--info {
+    background-color: stencilColor("banner--deafault-backgroundColor");
+    color: stencilColor("alert-color-alt");
+
+    .alertBox-close {
+        svg {
+            fill: $color-infoLight;
+        }
+    }
+}
+.productView-options .alertBox{
+    margin-bottom: 1.5rem;
+}
